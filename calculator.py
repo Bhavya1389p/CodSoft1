@@ -1,18 +1,4 @@
 def calculate(num1, num2, operation):
-  """Performs the specified arithmetic operation on the given numbers.
-
-  Args:
-    num1: The first number.
-    num2: The second number.
-    operation: The operation to perform (valid options are '+', '-', '*', '/').
-
-  Returns:
-    The result of the calculation.
-
-  Raises:
-    ValueError: If the operation is invalid or if division by zero is attempted.
-  """
-
   if operation not in ['+', '-', '*', '/']:
     raise ValueError("Invalid operation. Please choose one of '+', '-', '*', or '/'.")
 
@@ -29,8 +15,6 @@ def calculate(num1, num2, operation):
     return num1 / num2
 
 def main():
-  """The main function of the calculator."""
-
   while True:
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
